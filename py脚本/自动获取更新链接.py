@@ -17,8 +17,8 @@ class WebType(Enum):
     OKYRIN = 1
 
 class FILE_DATA_PATH(Enum):
-    XFLTD = 'D:/XFLTD.yaml'
-    OKYRIN = 'OKYRIN'
+    XFLTD = '/ql/static/dist/clash/XFLTD.yaml'
+    OKYRIN = '/ql/static/dist/clash/OKYRIN.yaml'
 
 
 def get_request_params(jc_tyjpe):
@@ -138,8 +138,7 @@ def get_clash_content(_subscribe_url, _jc_type):
         f.write(clash_config)
 
 
-type_list = [WebType.XFLTD]
-CLASH_FILE = ''
+type_list = [WebType.XFLTD, WebType.OKYRIN]
 
 if __name__ == '__main__':
     for jc_type in type_list:
