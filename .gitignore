@@ -10,7 +10,8 @@ tests/**/coverage/
 tests/e2e/reports
 selenium-debug.log
 
-_pycache_/
+*.py[cod]
+__pycache__/
 
 # Editor directories and files
 .idea
