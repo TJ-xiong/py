@@ -66,7 +66,7 @@ def get_request_params(jc_tyjpe):
             "sec-fetch-site": "cross-site",
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
         }
-        url = "https://voop.okyrin.top/api/v1/passport/auth/login"
+        url = "https://xvonql.pwzvd.cn/api/v1/passport/auth/login"
         data = {
             "email": "2386584329@qq.com",
             "password": "tjx20011019",
