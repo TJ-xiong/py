@@ -134,6 +134,8 @@ def get_clash_content(_subscribe_url, _jc_type):
     print('获取clash订阅地址并写入到文件中...')
     response = requests.get(_subscribe_url, headers={"User-Agent": "clash"})
     clash_config = response.content.decode('utf-8')
+    # 确保父目录存在
+    os.makedirs(os.path.dirname(FILE_DATA_PATH[_jc_type.name].value), exist_ok=True)
     with open(FILE_DATA_PATH[_jc_type.name].value, 'w', encoding="utf-8") as f:
         f.write(clash_config)
 
